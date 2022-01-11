@@ -14,18 +14,16 @@ $colorThird : #99E2D0;
 }
 
 /* HEADER Block */
-header {
-    width: 100%;
+.header {
+    position: relative;
+    padding: 17px 0 7px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.230);
 }
 
 .logo {
-    width: 100%;
+    font-family: $fontshrikhand;
     text-align: center;
-    margin: 17px 0 7px 0;
-}
-
-.logo img {
-    width: 42%;
+    font-weight: 400;
 }
 
 /* Banner Block */
@@ -34,10 +32,11 @@ header {
     width: 100%;
 }
 
+/* Localisation Zone */
 .localisation {
     width: 100%;
     background-color: #eaeaea;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -49,9 +48,10 @@ header {
     font-weight: normal;
 }
 
+/* Exploration */
 .exploration {
     width: 100%;
-    padding: 30px 0 30px 0;
+    padding: 50px 0 60px 0;
 }
 
 .explo-content {
@@ -65,6 +65,7 @@ header {
     gap: 25px;
 }
 
+/* Bouton Explorer */
 .btn-explo {
     border: none;
     text-decoration: none;
@@ -74,9 +75,16 @@ header {
     border-radius: 100px;
     padding: 15px 20px;
     background-image: linear-gradient(0deg, $colorFirst, $colorSecond);
-    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.40%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
 }
 
+.btn-explo:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.296);
+}
+
+/* Main Content */
 main {
     width: 100%;
     display: flex;
@@ -100,7 +108,9 @@ main {
     padding: 0 0 20px 20px;
 }
 
+/* Bouton Fonction */
 .btn-fonction {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -111,16 +121,26 @@ main {
     border-radius: 20px;
     height: 65px;
     border: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
+}
+
+.btn-fonction:hover {
+    cursor: pointer;
+    background-color: #ff79d918;
 }
 
 .number {
     display: block;
     position: absolute;
-    left: 15px;
+    left: -12px;
     background-color: $colorFirst;
     color: #fff;
     border-radius: 50px;
     padding: 6px 10px;
+}
+
+.logo-fonction {
+    color: #808080;
 }
 
 .btn-fonction p {
@@ -152,18 +172,13 @@ main {
     margin: auto;
     display: block;
     position: relative;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.096);
 }
 
-.new {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    background-color: $colorThird;
-    color: #00825c;
-    font-weight: 500;
-    font-size: 16px;
+.card-restaurant:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.296);
 }
 
 .card-restaurant img {
@@ -192,6 +207,19 @@ main {
 .card-like {
     display: block;
     position: absolute;
+}
+
+/* Etiquette New */
+.new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    background-color: $colorThird;
+    color: #00825c;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 /* FOOTER Block */
@@ -223,6 +251,11 @@ footer {
     color: #fff;
 }
 
-// .footer-content i {
-//     padding-right: 10px;
-// }
+.footer-content a:hover {
+    cursor: pointer;
+    color: $colorSecond;
+}
+
+.footer-icon {
+    margin-right: 10px;
+}
