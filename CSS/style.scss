@@ -1,0 +1,228 @@
+/* Fonts Variables */
+$fontRoboto : 'Roboto', sans-serif;
+$fontshrikhand : 'Shrikhand', cursive;
+
+/* Colors */
+$colorFirst : #9356DC;
+$colorSecond : #FF79DA;
+$colorThird : #99E2D0;
+
+/* WebSite CSS */
+* {
+    margin: 0;
+    font-family: $fontRoboto;
+}
+
+/* HEADER Block */
+header {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin: 17px 0 7px 0;
+}
+
+.logo img {
+    width: 42%;
+}
+
+/* Banner Block */
+.banner {
+    background-color: #f6f6f6;
+    width: 100%;
+}
+
+.localisation {
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.loca-txt {
+    font-weight: normal;
+}
+
+.exploration {
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.explo-content {
+    width: 86%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.btn-explo {
+    border: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16;
+    color: #fff;
+    border-radius: 100px;
+    padding: 15px 20px;
+    background-image: linear-gradient(0deg, $colorFirst, $colorSecond);
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.40%);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fonctionnement Block */
+.fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+}
+
+.fonctionnement h1 {
+    font-weight: bold;
+    font-size: 27px;
+    padding: 0 0 20px 20px;
+}
+
+.btn-fonction {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: auto;
+    border-radius: 20px;
+    height: 65px;
+    border: none;
+}
+
+.number {
+    display: block;
+    position: absolute;
+    left: 15px;
+    background-color: $colorFirst;
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 10px;
+}
+
+.btn-fonction p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Restaurant List Block */
+.restaurant {
+    width: 100%;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+}
+
+.restaurant h1 {
+    font-weight: bold;
+    font-size: 27px;
+    padding: 0 0 20px 20px;
+}
+
+/* Card Restaurants */
+.card-restaurant {
+    width: 90%;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    background-color: $colorThird;
+    color: #00825c;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card-restaurant img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.card-content {
+    width: 90%;
+    margin: 8px 10px 0 15px;
+}
+
+.card-restaurant h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card-content p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.card-like {
+    display: block;
+    position: absolute;
+}
+
+/* FOOTER Block */
+footer {
+    width: 100%;
+    background-color: #363636;
+    color: #fff;
+}
+
+.footer-content {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-content h1 {
+    font-family: $fontshrikhand;
+    font-size: 18px;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+// .footer-content i {
+//     padding-right: 10px;
+// }
