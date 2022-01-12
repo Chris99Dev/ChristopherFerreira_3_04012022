@@ -235,7 +235,20 @@ main {
 
 .card-content {
   width: 90%;
-  margin: 8px 10px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-restaurant h2 {
@@ -250,8 +263,8 @@ main {
 }
 
 .card-like {
-  display: block;
-  position: absolute;
+  width: 60px;
+  height: 70px;
 }
 
 /* Etiquette New */

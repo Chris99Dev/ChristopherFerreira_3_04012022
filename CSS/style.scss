@@ -190,7 +190,11 @@ main {
 
 .card-content {
     width: 90%;
-    margin: 8px 10px 0 15px;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-restaurant h2 {
@@ -205,8 +209,8 @@ main {
 }
 
 .card-like {
-    display: block;
-    position: absolute;
+    width: 60px;
+    height: 70px;
 }
 
 /* Etiquette New */
