@@ -14,6 +14,22 @@
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.23);
 }
 
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .logo {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -197,6 +213,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px 0 50px 0;
+  gap: 20px;
 }
 
 .restaurant h1 {
@@ -216,6 +233,8 @@ main {
   position: relative;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.096);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.096);
+  text-decoration: none;
+  color: #000;
 }
 
 .card-restaurant:hover {

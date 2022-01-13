@@ -20,6 +20,13 @@ $colorThird : #99E2D0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.230);
 }
 
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .logo {
     font-family: $fontshrikhand;
     text-align: center;
@@ -155,6 +162,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 50px 0 50px 0;
+    gap: 20px;
 }
 
 .restaurant h1 {
@@ -173,6 +181,8 @@ main {
     display: block;
     position: relative;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.096);
+    text-decoration: none;
+    color: #000;
 }
 
 .card-restaurant:hover {
