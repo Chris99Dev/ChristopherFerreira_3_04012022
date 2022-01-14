@@ -20,13 +20,6 @@ $colorThird : #99E2D0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.230);
 }
 
-.header-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .logo {
     font-family: $fontshrikhand;
     text-align: center;
@@ -89,10 +82,11 @@ $colorThird : #99E2D0;
     cursor: pointer;
     opacity: 0.7;
     box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.296);
+    
 }
 
 /* Main Content */
-main {
+.main-index {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -122,18 +116,22 @@ main {
     flex-direction: row;
     align-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 85%;
     margin: auto;
     border-radius: 20px;
     height: 65px;
     border: none;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
+    gap: 20px;
 }
 
-.btn-fonction:hover {
-    cursor: pointer;
-    background-color: #ff79d918;
+.third-fonction {
+    background-color: #f4edfe;
+}
+
+.third-fonction .logo-fonction {
+    color: $colorFirst;
 }
 
 .number {
@@ -148,6 +146,7 @@ main {
 
 .logo-fonction {
     color: #808080;
+    margin-left: 35px;
 }
 
 .btn-fonction p {
@@ -272,4 +271,89 @@ footer {
 
 .footer-icon {
     margin-right: 10px;
+}
+
+/*------- Style For MENU --------*/
+
+/* Header Menu */
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 65px;
+}
+
+.retour-menu {
+    margin-left: 15px;
+}
+
+/* Banner Menu */
+.banner-menu {
+    position: fixed;
+    width: 100%;
+    height: 250px;
+}
+
+.img-menu {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Menu Block */
+.main-menu {
+    position: absolute;
+    z-index: 4;
+    top: 255px;
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+}
+
+.menu-titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-titre h1 {
+    font-family: $fontshrikhand;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.entree-menu {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.entree-menu h2 {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.ligne-titre {
+    border: 1px solid $colorThird;
+    width: 11%;
+    margin: 5px 0 10px 0;
+}
+
+.card-plat {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Menu */
+.footer-menu {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
 }
