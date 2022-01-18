@@ -290,21 +290,20 @@ footer {
 
 /* Banner Menu */
 .banner-menu {
-    position: fixed;
     width: 100%;
-    height: 250px;
 }
 
 .img-menu {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* Main Menu Block */
 .main-menu {
-    position: absolute;
-    z-index: 4;
-    top: 255px;
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
     background-color: #f6f6f6;
     border-radius: 30px 30px 0 0;
     width: 100%;
@@ -315,6 +314,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: -35px;
 }
 
 .menu-titre h1 {
@@ -323,7 +323,7 @@ footer {
     font-weight: 100;
 }
 
-.entree-menu {
+.card-menu {
     width: 90%;
     height: auto;
     display: flex;
@@ -331,15 +331,17 @@ footer {
     margin: auto;
 }
 
-.entree-menu h2 {
-    font-size: 16px;
-    font-weight: lighter;
+.card-menu h2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 40px;
+    text-transform: uppercase;
 }
 
 .ligne-titre {
-    border: 1px solid $colorThird;
+    border: 2px solid $colorThird;
     width: 11%;
-    margin: 5px 0 10px 0;
+    margin-top: -11px;
 }
 
 .card-plat {
@@ -348,12 +350,49 @@ footer {
     width: 100%;
     height: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
 }
 
-/* Footer Menu */
-.footer-menu {
-    position: absolute;
-    z-index: 5;
-    bottom: 0;
+.plat-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
+.plat-content h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.plat-content p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.plat-price {
+    margin-right: 25px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.btn-box {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.command {
+    font-size: 16px;
+    padding: 16px 45px 16px 45px;
+}
+
