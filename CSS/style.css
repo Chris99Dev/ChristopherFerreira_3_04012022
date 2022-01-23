@@ -194,6 +194,16 @@
 .restaurant {
   width: 100%;
   background-color: #f6f6f6;
+  padding: 50px 0 50px 0;
+}
+
+.restaurant h1 {
+  font-weight: bold;
+  font-size: 27px;
+  padding: 0 0 20px 20px;
+}
+
+.restaurant-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,14 +211,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 0 50px 0;
-  gap: 20px;
-}
-
-.restaurant h1 {
-  font-weight: bold;
-  font-size: 27px;
-  padding: 0 0 20px 20px;
+  gap: 25px;
 }
 
 /* Card Restaurants */
@@ -469,6 +472,12 @@ footer {
           align-items: center;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.card-plat:focus {
+  background-color: black;
 }
 
 .plat-content {
@@ -532,5 +541,40 @@ footer {
 .command {
   font-size: 16px;
   padding: 16px 45px 16px 45px;
+}
+
+/* Tablette Media */
+@media (min-width: 650px) {
+  /* Index Page */
+  .restaurant-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px 10px;
+  }
+  .card-restaurant {
+    width: 320px;
+    height: 300px;
+    margin: 20px;
+  }
+  /* Menu Page */
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 0;
+  }
+  .header-menu a {
+    padding: 0 240px 0 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
