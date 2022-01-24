@@ -381,7 +381,7 @@ footer {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
     transition: 0.4s ease;
     &:focus {
-        background-color: black;
+        transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
     }
 }
 
@@ -437,6 +437,10 @@ footer {
 @media (min-width: 650px) {
 
     /* Index Page */
+    .btn-fonction {
+        width: 45%;
+    }
+
     .restaurant-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -452,13 +456,29 @@ footer {
 
 
     /* Menu Page */
-
     .header-menu {
         display: flex;
         justify-content: start;
         gap: 0;
         a {
             padding: 0 240px 0 20px;
+        }
+    }
+
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 80%;
+        margin: auto;
+        .btn-fonction {
+            width: 45%;
+        }
+        .restaurant-list {
+            width: 100%;
+            .card-restaurant {
+                width: 40%;
+            }
         }
     }
 

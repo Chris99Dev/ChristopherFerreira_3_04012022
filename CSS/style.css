@@ -477,7 +477,10 @@ footer {
 }
 
 .card-plat:focus {
-  background-color: black;
+  -webkit-transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 .plat-content {
@@ -546,6 +549,9 @@ footer {
 /* Tablette Media */
 @media (min-width: 650px) {
   /* Index Page */
+  .btn-fonction {
+    width: 45%;
+  }
   .restaurant-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -575,6 +581,22 @@ footer {
   }
   .header-menu a {
     padding: 0 240px 0 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .container .btn-fonction {
+    width: 45%;
+  }
+  .container .restaurant-list {
+    width: 100%;
+  }
+  .container .restaurant-list .card-restaurant {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */
