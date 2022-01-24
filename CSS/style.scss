@@ -380,7 +380,18 @@ footer {
     align-items: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
     transition: 0.4s ease;
-    &:focus {
+    .plat.selected {
+        background: #99e2d0;
+        cursor: pointer;
+        height: auto;
+        width: 0;
+        opacity: 0;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &:hover {
         transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
     }
 }
@@ -395,7 +406,7 @@ footer {
 }
 
 .plat-txt {
-    width: 85%;
+    width: 81%;
 }
 
 .plat-content h3 {
@@ -467,7 +478,9 @@ footer {
 
 }
 
+/* Desktop Media */
 @media (min-width: 769px) {
+    /* Index Page */
     .container {
         width: 80%;
         margin: auto;
@@ -482,4 +495,32 @@ footer {
         }
     }
 
+    /* Menu Page */
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        a {
+            padding: 0 35px 0 0;
+        }
+    }
+
+    .menu-titre {
+        justify-content: center;
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .card-menu{
+        width: 100%;
+        .card-container {
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            .menu-list {
+                width: 31%;
+            }
+        }
+    }
 }
