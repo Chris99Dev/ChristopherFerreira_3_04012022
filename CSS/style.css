@@ -93,8 +93,8 @@
 .btn-explo:hover {
   cursor: pointer;
   opacity: 0.7;
-  -webkit-box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.296);
-          box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.296);
+  -webkit-box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.0296);
+          box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.0296);
 }
 
 /* Main Content */
@@ -284,13 +284,11 @@
   outline: none;
   background: none;
   border: none;
-  cursor: help;
-  -webkit-transition: transform(0, 4s ease), transform(0, 4s ease);
-  transition: transform(0, 4s ease), transform(0, 4s ease);
-  transition: transform(0, 4s ease);
+  cursor: pointer;
 }
 
 .like-box .like-inside:hover {
+  stroke: red;
   fill: red;
 }
 
@@ -457,6 +455,8 @@ footer {
 
 .card-plat {
   background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
   border-radius: 20px;
   width: 100%;
   height: 75px;
@@ -472,37 +472,53 @@ footer {
           align-items: center;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
 }
 
-.card-plat .plat.selected {
+.card-plat:hover .plat-selected {
+  display: inherit;
+  right: 0;
+  opacity: 100;
+  margin: 0 -19px 0 7px;
+  height: 75px;
+  border-radius: 0 20px 20px 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-plat:hover .plat-selected .checked-plat {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.card-plat .plat-selected {
   background: #99e2d0;
-  cursor: pointer;
-  height: auto;
-  width: 0;
   opacity: 0;
-  border-radius: 0 15px 15px 0;
+  width: 20%;
+  margin: 0 -88px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.card-plat:hover {
-  -webkit-transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+.card-plat .plat-selected .checked-plat {
+  color: #fff;
 }
 
 .plat-content {
-  width: 95%;
+  width: 90%;
+  height: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,9 +530,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .plat-txt {
@@ -534,10 +550,6 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.plat-price {
-  margin-right: 25px;
 }
 
 .menu-list {
@@ -592,13 +604,17 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 0;
   }
   .header-menu a {
-    padding: 0 240px 0 20px;
+    padding: 0 45px 0 0;
+  }
+  .plat-selected {
+    margin: inherit;
+    margin: 0 0 0 -180px;
   }
 }
 
