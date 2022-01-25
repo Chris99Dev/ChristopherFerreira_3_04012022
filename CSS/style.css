@@ -612,9 +612,11 @@ footer {
   .header-menu a {
     padding: 0 45px 0 0;
   }
-  .plat-selected {
-    margin: inherit;
-    margin: 0 0 0 -180px;
+  .card-plat .plat-selected {
+    margin: 0 -92px 0 -84px;
+  }
+  .card-plat:hover .plat-selected {
+    margin: 0 -35px 0 7px;
   }
 }
 
@@ -662,14 +664,27 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .card-menu .card-container .menu-list {
-    width: 31%;
+    width: 35%;
+  }
+  .card-plat .plat-txt {
+    margin-right: -8px;
+  }
+  .card-plat .plat-selected {
+    margin: 0 -96px 0 -12px;
+  }
+  .card-plat:hover .plat-selected {
+    margin: 0 -6% 0 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */

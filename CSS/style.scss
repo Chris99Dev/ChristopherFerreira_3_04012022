@@ -486,9 +486,15 @@ footer {
         }
     }
 
-    .plat-selected {
-        margin: inherit;
-        margin: 0 0 0 -180px;
+    .card-plat {
+        .plat-selected {
+            margin: 0 -92px 0 -84px;
+        }
+        &:hover {
+            .plat-selected {
+                margin: 0 -35px 0 7px;
+            }
+        }
     }
 
 }
@@ -531,10 +537,26 @@ footer {
         .card-container {
             padding-top: 25px;
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: center;
             .menu-list {
-                width: 31%;
+                width: 35%;
+            }
+        }
+    }
+
+    .card-plat {
+        .plat-txt {
+            margin-right: -8px;
+        }
+
+        .plat-selected {
+            margin: 0 -96px 0 -12px;
+        }
+        &:hover {
+            .plat-selected {
+                margin: 0 -6% 0 7px;
             }
         }
     }
