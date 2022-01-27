@@ -37,10 +37,14 @@ $colorThird : #99E2D0;
     width: 100%;
     background-color: #eaeaea;
     padding: 20px 0 20px 0;
+}
+
+.loc-block {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -422,11 +426,17 @@ footer {
 
 .plat-txt {
     width: 81%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .plat-content h3 {
     font-weight: 500;
     font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .plat-content p {

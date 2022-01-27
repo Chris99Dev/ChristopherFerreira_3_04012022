@@ -31,6 +31,9 @@
   width: 100%;
   background-color: #eaeaea;
   padding: 20px 0 20px 0;
+}
+
+.loc-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,11 +41,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
@@ -537,11 +543,17 @@ footer {
 
 .plat-txt {
   width: 81%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .plat-content h3 {
   font-weight: 500;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .plat-content p {
