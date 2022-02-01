@@ -7,13 +7,18 @@
 }
 
 .loader {
-  height: 100%;
-  width: 100%;
-  background-color: #99E2D0;
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 9998;
+  height: 100%;
+  width: 100%;
+  background-color: #99E2D0;
+  -webkit-animation: LoaderBar 4s;
+          animation: LoaderBar 4s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .loader_bar {
@@ -39,45 +44,37 @@
 @-webkit-keyframes LoaderBar {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
+    z-index: 9998;
   }
   33% {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    z-index: 9998;
   }
   66% {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    z-index: 9998;
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
+    z-index: -1;
   }
 }
 @keyframes LoaderBar {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
+    z-index: 9998;
   }
   33% {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    z-index: 9998;
   }
   66% {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    z-index: 9998;
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
+    z-index: -1;
   }
 }
 
@@ -690,6 +687,33 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 15px;
+}
+
+.delay1 {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  -webkit-animation: DelayPop 1000ms 200ms;
+          animation: DelayPop 1000ms 200ms;
+}
+
+@-webkit-keyframes DelayPop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes DelayPop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn-box {

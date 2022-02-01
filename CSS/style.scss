@@ -14,13 +14,15 @@ $colorThird : #99E2D0;
 }
 
 .loader {
-    height: 100%;
-    width: 100%;
-    background-color: $colorThird;
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 9998;
+    height: 100%;
+    width: 100%;
+    background-color: $colorThird;
+    animation: LoaderBar 4s;
+    animation-delay: .7s;
+    animation-fill-mode: both;
     &_bar {
         transform: translateY(-50%);
         top: 50%;
@@ -43,19 +45,19 @@ $colorThird : #99E2D0;
 @keyframes LoaderBar {
     0% {
       opacity: 0;
-      transform: translateX(-300px);
+      z-index: 9998;
     }
     33% {
       opacity: 1;
-      transform: translateX(0px);
+      z-index: 9998;
     }
     66% {
       opacity: 1;
-      transform: translateX(0px);
+      z-index: 9998;
     }
     100% {
       opacity: 0;
-      transform: translateX(300px);
+      z-index: -1;
     }
 }
 
@@ -529,6 +531,29 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     gap: 15px;
+}
+
+.delay1 {
+    transform-origin: right;
+    transition: all .4s ease-out;
+    animation: DelayPop 1000ms 200ms;
+}
+
+// .delay2 {
+
+// }
+
+// .delay3 {
+
+// }
+
+@keyframes DelayPop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .btn-box {
