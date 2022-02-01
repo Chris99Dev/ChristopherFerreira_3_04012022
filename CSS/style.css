@@ -15,8 +15,8 @@
   background-color: #99E2D0;
   -webkit-animation: LoaderBar 4s;
           animation: LoaderBar 4s;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -689,27 +689,51 @@ footer {
   gap: 15px;
 }
 
-.delay1 {
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
-  -webkit-animation: DelayPop 1000ms 200ms;
-          animation: DelayPop 1000ms 200ms;
+.menu-item {
+  -webkit-animation: DelayPop .6s;
+          animation: DelayPop .6s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
+.delay0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delay1 {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.delay2 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.delay3 {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+/* Animation for the Pop Menu */
 @-webkit-keyframes DelayPop {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   100% {
     opacity: 1;
   }
 }
-
 @keyframes DelayPop {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   100% {
     opacity: 1;

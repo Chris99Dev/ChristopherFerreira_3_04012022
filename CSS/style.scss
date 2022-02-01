@@ -21,7 +21,7 @@ $colorThird : #99E2D0;
     width: 100%;
     background-color: $colorThird;
     animation: LoaderBar 4s;
-    animation-delay: .7s;
+    animation-delay: .3s;
     animation-fill-mode: both;
     &_bar {
         transform: translateY(-50%);
@@ -533,23 +533,33 @@ footer {
     gap: 15px;
 }
 
-.delay1 {
-    transform-origin: right;
-    transition: all .4s ease-out;
-    animation: DelayPop 1000ms 200ms;
+.menu-item {
+    animation: DelayPop .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
 }
 
-// .delay2 {
+.delay0 {
+    animation-delay: 0s;
+}
 
-// }
+.delay1 {
+    animation-delay: .1s;
+}
 
-// .delay3 {
+.delay2 {
+    animation-delay: .2s;
+}
 
-// }
+.delay3 {
+    animation-delay: .3s;
+}
 
+/* Animation for the Pop Menu */
 @keyframes DelayPop {
     0% {
         opacity: 0;
+        transform: translateY(100px);
     }
     100% {
         opacity: 1;
