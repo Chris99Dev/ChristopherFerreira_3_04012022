@@ -205,15 +205,14 @@ $colorThird : #99E2D0;
     height: 65px;
     border: none;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
+    cursor: pointer;
     gap: 20px;
-}
-
-.third-fonction {
-    background-color: #f4edfe;
-}
-
-.third-fonction .logo-fonction {
-    color: $colorFirst;
+    &:hover {
+        background-color: #f4edfe;
+        .logo-fonction {
+            color: $colorFirst;
+        }
+    }
 }
 
 .number {
@@ -314,10 +313,14 @@ $colorThird : #99E2D0;
     background: none;
     border: none;
     cursor: pointer;
-    .like-inside:hover {
+    &:hover {
         stroke: red;
         fill: red;
     }
+}
+
+#like-inside:hover {
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
 }
 
 .card-like {

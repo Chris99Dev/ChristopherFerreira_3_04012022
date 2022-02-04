@@ -277,14 +277,15 @@
   border: none;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.206);
+  cursor: pointer;
   gap: 20px;
 }
 
-.third-fonction {
+.btn-fonction:hover {
   background-color: #f4edfe;
 }
 
-.third-fonction .logo-fonction {
+.btn-fonction:hover .logo-fonction {
   color: #9356DC;
 }
 
@@ -405,9 +406,13 @@
   cursor: pointer;
 }
 
-.like-box .like-inside:hover {
+.like-box:hover {
   stroke: red;
   fill: red;
+}
+
+#like-inside:hover {
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
 }
 
 .card-like {
