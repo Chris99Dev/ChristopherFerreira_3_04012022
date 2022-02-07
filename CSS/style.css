@@ -493,24 +493,9 @@ footer {
 
 /*------- Style For MENU --------*/
 /* Header Menu */
-.header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 65px;
-}
-
 .retour-menu {
+  position: absolute;
+  padding: 15px 15px;
   color: #000;
   margin-left: 15px;
 }
@@ -791,17 +776,8 @@ footer {
     margin: 20px;
   }
   /* Menu Page */
-  .header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 0;
-  }
   .header-menu a {
-    padding: 0 45px 0 0;
+    padding: 0 45px 0 40px;
   }
   .card-plat .plat-selected {
     margin: 0 -92px 0 -84px;
@@ -828,17 +804,6 @@ footer {
     width: 40%;
   }
   /* Menu Page */
-  .header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header-menu a {
-    padding: 0 35px 0 0;
-  }
   .menu-titre {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

@@ -394,15 +394,9 @@ footer {
 /*------- Style For MENU --------*/
 
 /* Header Menu */
-.header-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 65px;
-}
-
 .retour-menu {
+    position: absolute;
+    padding: 15px 15px;
     color: #000;
     margin-left: 15px;
 }
@@ -613,11 +607,10 @@ footer {
 
     /* Menu Page */
     .header-menu {
-        display: flex;
-        justify-content: center;
-        gap: 0;
+        // display: flex;
+        // justify-content: center;
         a {
-            padding: 0 45px 0 0;
+             padding: 0 45px 0 40px;
         }
     }
 
@@ -652,14 +645,6 @@ footer {
     }
 
     /* Menu Page */
-    .header-menu {
-        display: flex;
-        justify-content: center;
-        a {
-            padding: 0 35px 0 0;
-        }
-    }
-
     .menu-titre {
         justify-content: center;
         h1 {
