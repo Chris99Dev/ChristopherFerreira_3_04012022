@@ -313,14 +313,6 @@ $colorThird : #99E2D0;
     background: none;
     border: none;
     cursor: pointer;
-    &:hover {
-        stroke: red;
-        fill: red;
-    }
-}
-
-#like-inside:hover {
-    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
 }
 
 .card-like {
@@ -328,7 +320,25 @@ $colorThird : #99E2D0;
     stroke:black;
     stroke-width:80.75px;
     padding-top: 5px;
+    :hover {
+        fill:url(#grad2);
+        stroke: url(#grad2);
+    }
+    :active {
+        fill:url(#grad2);
+        stroke: url(#grad2);
+    }
 }
+
+.color-start {
+    stop-color:#ff79da;
+    stop-opacity:1;
+  }
+
+  .color-stop {
+    stop-color:#9356dc;
+    stop-opacity:1;
+  }
 
 /* Etiquette New */
 .new {
