@@ -125,11 +125,14 @@ $colorThird : #99E2D0;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    i {
+        position: relative;
+    }
+    .loca-txt {
+        font-weight: normal;
+    }
 }
 
-.loca-txt {
-    font-weight: normal;
-}
 
 /* Exploration */
 .exploration {
@@ -228,11 +231,13 @@ $colorThird : #99E2D0;
 .logo-fonction {
     color: #808080;
     margin-left: 35px;
+    position: absolute;
 }
 
 .btn-fonction p {
     font-size: 16px;
     font-weight: 500;
+    margin-left: 80px;
 }
 
 /* Restaurant List Block */
@@ -519,14 +524,14 @@ footer {
 
 .plat-content h3 {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .plat-content p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: lighter;
     white-space: nowrap;
     overflow: hidden;
@@ -634,7 +639,10 @@ footer {
         width: 80%;
         margin: auto;
         .btn-fonction {
-            width: 45%;
+            width: 40%;
+            p {
+                margin-left: 30%;
+            }
         }
         .restaurant-list {
             width: 100%;
