@@ -126,10 +126,13 @@ $colorThird : #99E2D0;
     align-items: center;
     gap: 10px;
     i {
-        position: relative;
+        position: absolute;
+        display: block;
+        left: 29%;
     }
     .loca-txt {
         font-weight: normal;
+        text-align: center;
     }
 }
 
@@ -329,21 +332,21 @@ $colorThird : #99E2D0;
         fill:url(#grad2);
         stroke: url(#grad2);
     }
-    :active {
-        fill:url(#grad2);
-        stroke: url(#grad2);
-    }
+}
+
+stop {
+    transition: all .4s ease;
 }
 
 .color-start {
     stop-color:#ff79da;
     stop-opacity:1;
-  }
+}
 
-  .color-stop {
+.color-stop {
     stop-color:#9356dc;
     stop-opacity:1;
-  }
+}
 
 /* Etiquette New */
 .new {
@@ -593,6 +596,10 @@ footer {
 @media (min-width: 650px) {
 
     /* Index Page */
+    .loc-block i {
+        left: 40%;
+    }
+
     .btn-fonction {
         width: 45%;
     }
@@ -635,6 +642,10 @@ footer {
 /* Desktop Media */
 @media (min-width: 769px) {
     /* Index Page */
+    .loc-block i {
+        left: 43%;
+    }
+
     .container {
         width: 80%;
         margin: auto;

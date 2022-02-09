@@ -165,11 +165,14 @@
 }
 
 .loc-block i {
-  position: relative;
+  position: absolute;
+  display: block;
+  left: 29%;
 }
 
 .loc-block .loca-txt {
   font-weight: normal;
+  text-align: center;
 }
 
 /* Exploration */
@@ -424,9 +427,9 @@
   stroke: url(#grad2);
 }
 
-.card-like :active {
-  fill: url(#grad2);
-  stroke: url(#grad2);
+stop {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .color-start {
@@ -761,6 +764,9 @@ footer {
 /* Tablette Media */
 @media (min-width: 650px) {
   /* Index Page */
+  .loc-block i {
+    left: 40%;
+  }
   .btn-fonction {
     width: 45%;
   }
@@ -796,6 +802,9 @@ footer {
 /* Desktop Media */
 @media (min-width: 769px) {
   /* Index Page */
+  .loc-block i {
+    left: 43%;
+  }
   .container {
     width: 80%;
     margin: auto;
