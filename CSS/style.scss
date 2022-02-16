@@ -20,7 +20,7 @@ $colorThird : #99E2D0;
     height: 100%;
     width: 100%;
     background-color: $colorThird;
-    animation: LoaderBar 4s;
+    animation: LoaderBar 3s;
     animation-delay: .3s;
     animation-fill-mode: both;
     &_bar {
@@ -329,13 +329,23 @@ $colorThird : #99E2D0;
     stroke-width:80.75px;
     padding-top: 5px;
     :hover {
-        fill:url(#grad2);
-        stroke: url(#grad2);
+        animation: FillLike 0.6s;
+        animation-fill-mode: both;
     }
 }
 
-stop {
-    transition: all .4s ease;
+/* Animation for the Like */
+@keyframes FillLike {
+    0% {
+        opacity: 0;
+        fill:url(#grad2);
+        stroke: url(#grad2);
+    }
+    100% {
+        opacity: 1;
+        fill:url(#grad2);
+        stroke: url(#grad2);
+    }
 }
 
 .color-start {
@@ -602,6 +612,17 @@ footer {
 
     .btn-fonction {
         width: 45%;
+        p{
+            margin-left: 100px;
+        }
+    }
+
+    .fonctionnement h1 {
+        text-align: center;
+    }
+
+    .restaurant h1 {
+        text-align: center;
     }
 
     .restaurant-list {
@@ -651,9 +672,6 @@ footer {
         margin: auto;
         .btn-fonction {
             width: 40%;
-            p {
-                margin-left: 30%;
-            }
         }
         .restaurant-list {
             width: 100%;

@@ -13,8 +13,8 @@
   height: 100%;
   width: 100%;
   background-color: #99E2D0;
-  -webkit-animation: LoaderBar 4s;
-          animation: LoaderBar 4s;
+  -webkit-animation: LoaderBar 3s;
+          animation: LoaderBar 3s;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
   -webkit-animation-fill-mode: both;
@@ -423,13 +423,36 @@
 }
 
 .card-like :hover {
-  fill: url(#grad2);
-  stroke: url(#grad2);
+  -webkit-animation: FillLike 0.6s;
+          animation: FillLike 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-stop {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+/* Animation for the Like */
+@-webkit-keyframes FillLike {
+  0% {
+    opacity: 0;
+    fill: url(#grad2);
+    stroke: url(#grad2);
+  }
+  100% {
+    opacity: 1;
+    fill: url(#grad2);
+    stroke: url(#grad2);
+  }
+}
+@keyframes FillLike {
+  0% {
+    opacity: 0;
+    fill: url(#grad2);
+    stroke: url(#grad2);
+  }
+  100% {
+    opacity: 1;
+    fill: url(#grad2);
+    stroke: url(#grad2);
+  }
 }
 
 .color-start {
@@ -770,6 +793,15 @@ footer {
   .btn-fonction {
     width: 45%;
   }
+  .btn-fonction p {
+    margin-left: 100px;
+  }
+  .fonctionnement h1 {
+    text-align: center;
+  }
+  .restaurant h1 {
+    text-align: center;
+  }
   .restaurant-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -811,9 +843,6 @@ footer {
   }
   .container .btn-fonction {
     width: 40%;
-  }
-  .container .btn-fonction p {
-    margin-left: 30%;
   }
   .container .restaurant-list {
     width: 100%;
