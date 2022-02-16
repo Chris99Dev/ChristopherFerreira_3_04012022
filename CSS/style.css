@@ -13,8 +13,8 @@
   height: 100%;
   width: 100%;
   background-color: #99E2D0;
-  -webkit-animation: LoaderBar 3s;
-          animation: LoaderBar 3s;
+  -webkit-animation: LoaderBar 4s;
+          animation: LoaderBar 4s;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
   -webkit-animation-fill-mode: both;

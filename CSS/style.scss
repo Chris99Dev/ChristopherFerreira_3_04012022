@@ -20,7 +20,7 @@ $colorThird : #99E2D0;
     height: 100%;
     width: 100%;
     background-color: $colorThird;
-    animation: LoaderBar 3s;
+    animation: LoaderBar 4s;
     animation-delay: .3s;
     animation-fill-mode: both;
     &_bar {
