@@ -666,7 +666,7 @@ footer {
 }
 
 .plat-content {
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin: auto;
   display: -webkit-box;
@@ -685,9 +685,7 @@ footer {
 }
 
 .plat-txt {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 81%;
   white-space: nowrap;
   overflow: hidden;
   padding-left: 10px;
