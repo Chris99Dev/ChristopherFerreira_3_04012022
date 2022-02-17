@@ -15,8 +15,6 @@
   background-color: #99E2D0;
   -webkit-animation: LoaderBar 4s;
           animation: LoaderBar 4s;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -149,30 +147,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loc-block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+  width: 40%;
 }
 
-.loc-block i {
-  position: absolute;
-  display: block;
-  left: 29%;
-}
-
-.loc-block .loca-txt {
-  font-weight: normal;
-  text-align: center;
+.loc-block div i {
+  position: relative;
+  left: -10px;
 }
 
 /* Exploration */
@@ -425,8 +421,10 @@
 .card-like :hover {
   -webkit-animation: FillLike 0.6s;
           animation: FillLike 0.6s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 /* Animation for the Like */
@@ -737,18 +735,18 @@ footer {
 }
 
 .delay1 {
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s;
-}
-
-.delay2 {
   -webkit-animation-delay: .2s;
           animation-delay: .2s;
 }
 
-.delay3 {
+.delay2 {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
+}
+
+.delay3 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 /* Animation for the Pop Menu */
@@ -787,9 +785,6 @@ footer {
 /* Tablette Media */
 @media (min-width: 650px) {
   /* Index Page */
-  .loc-block i {
-    left: 40%;
-  }
   .btn-fonction {
     width: 45%;
   }
@@ -834,9 +829,6 @@ footer {
 /* Desktop Media */
 @media (min-width: 769px) {
   /* Index Page */
-  .loc-block i {
-    left: 43%;
-  }
   .container {
     width: 80%;
     margin: auto;
