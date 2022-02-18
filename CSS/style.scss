@@ -203,6 +203,7 @@ $colorThird : #99E2D0;
     justify-content: flex-start;
     width: 85%;
     margin: auto;
+    margin-bottom: 20px;
     border-radius: 20px;
     height: 65px;
     border: none;
@@ -612,6 +613,7 @@ footer {
     /* Index Page */
     .btn-fonction {
         width: 45%;
+        margin-bottom: 20px;
         p{
             margin-left: 100px;
         }
@@ -667,7 +669,15 @@ footer {
         width: 80%;
         margin: auto;
         .btn-fonction {
-            width: 40%;
+            width: 45%;
+            justify-content: center;
+            margin-bottom: 20px;
+            p {
+                margin: 0;
+            }
+            i {
+                left: 40px;
+            }
         }
         .restaurant-list {
             width: 100%;

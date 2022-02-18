@@ -275,6 +275,7 @@
           justify-content: flex-start;
   width: 85%;
   margin: auto;
+  margin-bottom: 20px;
   border-radius: 20px;
   height: 65px;
   border: none;
@@ -795,6 +796,7 @@ footer {
   /* Index Page */
   .btn-fonction {
     width: 45%;
+    margin-bottom: 20px;
   }
   .btn-fonction p {
     margin-left: 100px;
@@ -842,7 +844,17 @@ footer {
     margin: auto;
   }
   .container .btn-fonction {
-    width: 40%;
+    width: 45%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .container .btn-fonction p {
+    margin: 0;
+  }
+  .container .btn-fonction i {
+    left: 40px;
   }
   .container .restaurant-list {
     width: 100%;
