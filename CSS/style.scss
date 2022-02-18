@@ -234,7 +234,7 @@ $colorThird : #99E2D0;
     position: absolute;
 }
 
-.btn-fonction p {
+.btn-fonction .txt-fonction {
     font-size: 16px;
     font-weight: 500;
     margin-left: 80px;
@@ -672,7 +672,7 @@ footer {
             width: 45%;
             justify-content: center;
             margin-bottom: 20px;
-            p {
+            .txt-fonction {
                 margin: 0;
             }
             i {

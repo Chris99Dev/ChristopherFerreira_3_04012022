@@ -309,7 +309,7 @@
   position: absolute;
 }
 
-.btn-fonction p {
+.btn-fonction .txt-fonction {
   font-size: 16px;
   font-weight: 500;
   margin-left: 80px;
@@ -850,7 +850,7 @@ footer {
             justify-content: center;
     margin-bottom: 20px;
   }
-  .container .btn-fonction p {
+  .container .btn-fonction .txt-fonction {
     margin: 0;
   }
   .container .btn-fonction i {
