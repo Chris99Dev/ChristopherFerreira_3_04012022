@@ -20,7 +20,7 @@ $colorThird : #99E2D0;
     height: 100%;
     width: 100%;
     background-color: $colorThird;
-    animation: LoaderBar 4s;
+    animation: LoaderBar 10s;
     animation-fill-mode: both;
     &_bar {
         transform: translateY(-50%);
@@ -336,13 +336,13 @@ $colorThird : #99E2D0;
 @keyframes FillLike {
     from {
         opacity: 0;
-        fill:url(#grad2);
-        stroke: url(#grad2);
+        fill:url(#grad1);
+        stroke: url(#grad1);
     }
     to {
         opacity: 1;
-        fill:url(#grad2);
-        stroke: url(#grad2);
+        fill:url(#grad1);
+        stroke: url(#grad1);
     }
 }
 
